@@ -1,0 +1,1 @@
+git_src --branch debian/2.12.7+dfsg-3 https://salsa.debian.org/xml-sgml-team/libxml2.git
