@@ -1,5 +1,8 @@
 git_src --branch debian/2.9.14+dfsg-1 https://salsa.debian.org/xml-sgml-team/libxml2.git
-cp CVE-2024-34459.patch $dir/src/debian/patches/
+cp patches/CVE-2024-34459.patch $dir/src/debian/patches/
+cp patches/CVE-2024-40896.patch $dir/src/debian/patches/
 echo "CVE-2024-34459.patch" >> $dir/src/debian/patches/series
+echo "CVE-2024-40896.patch" >> $dir/src/debian/patches/series
 
-version_suffix="gardenlinux0+bp1443"
+
+#version_suffix="gardenlinux0+bp1443"
