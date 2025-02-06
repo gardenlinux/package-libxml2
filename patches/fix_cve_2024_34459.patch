@@ -1,0 +1,25 @@
+diff --color -Naur a/debian/patches/CVE-2024-34459.patch b/debian/patches/CVE-2024-34459.patch
+--- a/debian/patches/CVE-2024-34459.patch	1970-01-01 01:00:00
++++ b/debian/patches/CVE-2024-34459.patch	2025-02-06 15:07:49
+@@ -0,0 +1,13 @@
++diff --git a/xmllint.c b/xmllint.c
++index ee6bfdc..29c727e 100644
++--- a/xmllint.c
+++++ b/xmllint.c
++@@ -602,7 +602,7 @@ xmlHTMLPrintFileContext(xmlParserInputPtr input) {
++     len = strlen(buffer);
++     snprintf(&buffer[len], sizeof(buffer) - len, "\n");
++     cur = input->cur;
++-    while ((*cur == '\n') || (*cur == '\r'))
+++    while ((cur > base) && (*cur == '\n') || (*cur == '\r'))
++ 	cur--;
++     n = 0;
++     while ((cur != base) && (n++ < 80)) {
+diff --color -Naur a/debian/patches/series b/debian/patches/series
+--- a/debian/patches/series	2025-02-06 15:06:14
++++ b/debian/patches/series	2025-02-06 15:09:12
+@@ -1,3 +1,4 @@
+ install-html.patch
+ xml2-config-fix.patch
+ python3-unicode-errors.patch
++CVE-2024-34459.patch
