@@ -1,4 +1,4 @@
 git_src --branch debian/2.9.14+dfsg-1 https://salsa.debian.org/xml-sgml-team/libxml2.git
 apply_patches
 
-version_suffix="gardenlinux1+bp1443"
+version_suffix="gl2+bp1443"

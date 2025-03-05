@@ -1,2 +1,4 @@
 fix_cve_2024_34459.patch
 fix_use_after_free_in_xmlXIncludeAddNode.patch
+fix-CVE-2024-25062_CVE-2024-56171_CVE-2025-24928.patch
+add-patches-to-debian-series.patch

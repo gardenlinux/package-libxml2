@@ -1,0 +1,12 @@
+--- a/debian/patches/series	2025-03-05 15:35:43.951812378 +0100
++++ b/debian/patches/series	2025-03-05 15:36:13.612311991 +0100
+@@ -1,3 +1,9 @@
+ install-html.patch
+ xml2-config-fix.patch
+ python3-unicode-errors.patch
++CVE-2024-34459.patch
++fix_use_after_free_in_xmlXIncludeAddNode.patch
++CVE-2024-25062-xmlreader-Don-t-expand-XIncludes-when.patch
++CVE-2024-56171.patch
++CVE-2025-24928.patch
++
