@@ -1,1 +1,2 @@
 apt_src libxml2
+version_suffix=gl0
