@@ -1,3 +1,8 @@
+version_orig=2.12.7+dfsg+really2.9.14-2.1+deb13u1
+version=2.12.7+dfsg+really2.9.14-2.1
+echo "deb http://ftp2.de.debian.org/debian/ trixie main" > /etc/apt/sources.list
+echo "deb-src http://ftp2.de.debian.org/debian/ trixie main" >> /etc/apt/sources.list
+apt-get update
 apt_src libxml2
 import_upstream_patches
-version_suffix=gl1~bp1877
+version_suffix="+gl0~b1877"
